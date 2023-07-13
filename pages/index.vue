@@ -3,17 +3,22 @@ const isAuth = useAuth();
 const users = useUsers();
 const user = ref({ login: '', password: '' });
 let name = '';
+let isError = ref(false);
 
 const onSubmit = () => {
   const dataUser = users.value.find((item) => item.login === user.value.login);
-  if (dataUser.password === user.value.password) {
+  if (dataUser && dataUser.password === user.value.password) {
     name = user.value.login;
+    isError.value = false;
     isAuth.value = true;
     user.value = { login: '',  password: '' };
+  } else {
+    isError.value = true;
   }
 }
 
 const onExit = () => {
+  isError.value = false;
   isAuth.value = false;
 }
 </script>
@@ -41,6 +46,9 @@ const onExit = () => {
           name="password"
           required
         />
+        <div v-if="isError" class="alert alert-danger" role="alert">
+          Неправильный логин или пароль
+        </div>
         <button type="button" class="btn btn-primary mb-3" @click="onSubmit">Войти</button>
       </form>
       <button v-if="isAuth" type="button" class="btn btn-primary mb-3" @click="onExit">Выйти</button>

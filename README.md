@@ -1,4 +1,10 @@
-# Nuxt 3 Minimal Starter
+# Тестовое задание на Nuxt 3
+
+Сделать страницу авторизации пользователя (форма с логином и паролем) и одного пользователя с логином admin и паролем password, чтобы можно было авторизоваться для проверки.
+Приложение должно работать в виде SPA (Single Page Application).
+Front Bootstrap5+VueJS+NuxtJS
+
+## Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 

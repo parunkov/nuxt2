@@ -6,7 +6,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -17,6 +18,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.0",
+    "gh-pages": "^5.0.0",
     "sass": "^1.63.6"
   }
 }
