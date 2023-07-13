@@ -4,6 +4,10 @@
 Приложение должно работать в виде SPA (Single Page Application).
 Front Bootstrap5+VueJS+NuxtJS
 
+## Демо страница
+
+https://parunkov.github.io/nuxt2/
+
 ## Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.

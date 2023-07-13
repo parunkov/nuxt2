@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/styles/main.scss'],
-  // app: {
-  //   baseURL: 'https://parunkov.github.io/nuxt2/'
-  // }
+  app: {
+    baseURL: '/nuxt2/'
+  }
 })
